@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Survey Form</h1>
+      <p id="description">
+        We would love to hear your feedback. Please fill out this short survey.
+      </p>
+      <form action="" class="survey-form">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your full name"
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </label>
+          <label for="number" id="number-label"
+            >Age:
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="13"
+              max="60"
+              placeholder="Enter your age"
+            />
+          </label>
+          <label for="dropdown"
+            >Select your country:
+            <select name="dropdown" id="dropdown">
+              <option value="">(Select one))</option>
+              <option value="1">USA</option>
+              <option value="2">Canada</option>
+              <option value="3">UK</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Profession:</legend>
+          <label for="student"
+            ><input
+              type="radio"
+              name="profession"
+              id="student"
+              value="1"
+              checked
+            />Student</label
+          >
+          <label for="job-holder"
+            ><input
+              type="radio"
+              name="profession"
+              id="job-holder"
+              value="2"
+            />Job Holder</label
+          >
+          <label for="unemployed"
+            ><input
+              type="radio"
+              name="profession"
+              id="unemployed"
+              value="3"
+            />Unemployed</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Select one or more:</legend>
+          <label for="option-a"
+            ><input
+              type="checkbox"
+              name="option-a"
+              id="option-a"
+              value="1"
+            />Option A</label
+          >
+          <label for="option-b"
+            ><input type="checkbox" name="option-b" id="option-b" />Option
+            B</label
+          >
+          <label for="option-c"
+            ><input type="checkbox" name="option-c" id="option-c" />Option
+            C</label
+          >
+        </fieldset>
+        <label for="comments"
+          >Do you have anything to add?
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="That burrito was trash.."
+            rows="3"
+            cols="30"
+          ></textarea>
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
 </html>
